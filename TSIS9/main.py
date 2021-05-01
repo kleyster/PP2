@@ -81,11 +81,6 @@ while menuCycleLevel1:
     for i in range(len(s)):
         showRecordOne = font2.render(s[i], True, (0, 0, 0))
         screen.blit(showRecordOne, (380, i*60 + 200))
-    button1 = pygame.Surface((80, 50))
-    button1.fill((0, 255, 0))
-    but = font3.render('Back', True, (0, 0, 0))
-    button1.blit(but, (15, 11))
-    screen.blit(button1, (50, 50))
     pygame.display.flip()
 
 screen.fill((102, 0, 102))
@@ -169,40 +164,19 @@ while menuCycle2:
             if 550 < clr[0] < 650 and 400 < clr[1] < 500:
                 menuCycle2 = False
                 menuCycle3 = True
-                colorRgb = (0, 0, 255)
-            if 150 < clr[0] < 250 and 600 < clr[1] < 700:
-                menuCycle2 = False
-                menuCycle3 = True
-                colorRgb = (255, 255, 0)
-            if 350 < clr[0] < 450 and 600 < clr[1] < 700:
-                menuCycle2 = False
-                menuCycle3 = True
                 colorRgb = (255, 102, 255)
-            if 550 < clr[0] < 650 and 600 < clr[1] < 700:
-                menuCycle2 = False
-                menuCycle3 = True
-                colorRgb = (255, 153, 0)
 
     choosingColor = font2.render('Choose color of your AppleGrub', True, (153, 204, 0))
     screen.blit(choosingColor, (157, 200))
-    one_p1 = pygame.Surface((100, 100))
-    one_p1.fill((255, 0, 0))
-    one_p2 = pygame.Surface((100, 100))
-    one_p2.fill((0, 255, 0))
-    one_p3 = pygame.Surface((100, 100))
-    one_p3.fill((0, 0, 255))
-    one_p4 = pygame.Surface((100, 100))
-    one_p4.fill((255, 255, 0))
-    one_p5 = pygame.Surface((100, 100))
-    one_p5.fill((255, 102, 255))
-    one_p6 = pygame.Surface((100, 100))
-    one_p6.fill((255, 153, 0))
-    screen.blit(one_p1, (150, 400))
-    screen.blit(one_p2, (350, 400))
-    screen.blit(one_p3, (550, 400))
-    screen.blit(one_p4, (150, 600))
-    screen.blit(one_p5, (350, 600))
-    screen.blit(one_p6, (550, 600))
+    sColor = pygame.Surface((100, 100))
+    sColor.fill((255, 0, 0))
+    sColor2 = pygame.Surface((100, 100))
+    sColor2.fill((0, 255, 0))
+    sColor3 = pygame.Surface((100, 100))
+    sColor3.fill((255, 102, 255))
+    screen.blit(sColor, (150, 400))
+    screen.blit(sColor2, (350, 400))
+    screen.blit(sColor3, (550, 400))
 
     pygame.display.flip()
 
